@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>TEDxVITVellore</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-custom navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand mx-auto" href="#">Listify</a>
+  </nav>
+  <div class="info">Listify allows you to create lists according to categories.</div>
+  
+  <div class="container">
+    <button type="button" class="btn btn-success create" onclick="openForm()">Create Category</button>
+  </div>
+
+  <div class="container">
+    
+  <div class="card-container">
+    <div class="card" onclick="addFlip()">
+        <div class="card-face front">
+            <div class="content">
+                <div class="main">
+                    <h3 class="name">Movies</h3>
+            </div>
+        </div>
+        </div> <!-- end front panel -->
+        <div class="card-face back">
+          <ul class="list-group list-group-flush" style= "background-color: bisque;">
+            <li class="list-group-item">Snow Piercer</li>
+            <li class="list-group-item">Mystic River</li>
+          </ul>
+        </div> <!-- end back panel -->
+    </div> <!-- end card -->
+</div> <!-- end card-container -->
+<div class="card-container">
+  <div class="card" onclick="addFlip()">
+      <div class="card-face front">
+          <div class="content">
+              <div class="main">
+                  <h3 class="name">Web Development</h3>
+          </div>
+      </div>
+      </div> <!-- end front panel -->
+      <div class="card-face back" style="background-color: #222831;">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">React</li>
+          <li class="list-group-item">Vue</li>
+          <li class="list-group-item">CSS</li>
+        </ul>
+      </div> <!-- end back panel -->
+  </div> <!-- end card -->
+</div> <!-- end card-container -->
+<div class="card-container">
+  <div class="card" onclick="addFlip()">
+      <div class="card-face front">
+          <div class="content">
+              <div class="main">
+                  <h3 class="name">Hello</h3>
+          </div>
+      </div>
+      </div> <!-- end front panel -->
+      <div class="card-face back">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">RANDOM</li>
+          <li class="list-group-item">RANDOM</li>
+          <li class="list-group-item">RANDOM</li>
+        </ul>
+      </div> <!-- end back panel -->
+  </div> <!-- end card -->
+</div> <!-- end card-container -->
+<div class="card-container">
+  <div class="card" onclick="addFlip()">
+      <div class="card-face front">
+          <div class="content">
+              <div class="main">
+                  <h3 class="name">Hippie</h3>
+                 
+          </div>
+      </div>
+      </div> <!-- end front panel -->
+      <div class="card-face back">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">RANDOM</li>
+          <li class="list-group-item">RANDOM</li>
+          <li class="list-group-item">RANDOM</li>
+        </ul>
+      </div> <!-- end back panel -->
+  </div> <!-- end card -->
+</div> <!-- end card-container -->
+  </div> <!--end of container-->
+  <div id="loginPopup">
+    <div class="form-popup" id="popupForm">
+      <form action="/action_page.php" class="form-container">
+        <h2>Category Name</h2>
+        <input type="text" id="email" placeholder="List Item" name="email" required>
+        <button type="submit" class="btn btn-success">Add Category!</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+  </div>
+      <script src="script.js"></script>
+      
+</body>
+</html>
