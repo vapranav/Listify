@@ -62,7 +62,6 @@ form{
     border: none !important;
     outline: none !important;
     box-shadow: 0 4px 8px 0 black;
-    overflow-y: scroll;
 }
 
 .back {
@@ -70,6 +69,7 @@ form{
     background-color: #222831;
     border: none !important;
     outline: none !important;
+    overflow-y: scroll;
 }
 .front {
     font-size: 40px;
