@@ -62,6 +62,7 @@ form{
     border: none !important;
     outline: none !important;
     box-shadow: 0 4px 8px 0 black;
+    overflow-y: scroll;
 }
 
 .back {
